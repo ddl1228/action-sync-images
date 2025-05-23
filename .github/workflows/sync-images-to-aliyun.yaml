@@ -34,6 +34,6 @@ jobs:
     - name: Use Skopeo Tools Sync Image to AliYun Docker Registry
       run: |
         #!/usr/bin/env bash
-        skopeo copy --all docker://docker.io/nicolaka/netshoot docker://registry.cn-hangzhou.aliyuncs.com/lue/netshoot
+        skopeo copy --all docker://docker.io/nicolaka/netshoot:latest docker://registry.cn-hangzhou.aliyuncs.com/lue/netshoot:latest
         skopeo copy --all docker://registry.k8s.io/etcd:3.5.7-0 docker://registry.cn-hangzhou.aliyuncs.com/lue/etcd:3.5.7-0
         skopeo copy --all docker://ghcr.io/stakater/reloader:v1.4.2 docker://registry.cn-hangzhou.aliyuncs.com/lue/reloader:v1.4.2
