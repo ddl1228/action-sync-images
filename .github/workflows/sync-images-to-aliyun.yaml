@@ -36,4 +36,4 @@ jobs:
         #!/usr/bin/env bash
         skopeo copy --all docker://docker.io/nicolaka/netshoot:latest docker://registry.cn-hangzhou.aliyuncs.com/lue/netshoot:latest
         skopeo copy --all docker://registry.k8s.io/etcd:3.5.7-0 docker://registry.cn-hangzhou.aliyuncs.com/lue/etcd:3.5.7-0
-        skopeo copy --all docker://openjdk:11-jre-slim docker://registry.cn-hangzhou.aliyuncs.com/lue/openjdk:11-jre-slim
+        skopeo copy --all docker://maven:3.6.1-jdk-8-alpine docker://registry.cn-hangzhou.aliyuncs.com/lue/maven:3.6.1-jdk-8-alpine
