@@ -34,4 +34,4 @@ jobs:
     - name: Use Skopeo Tools Sync Image to AliYun Docker Registry
       run: |
         #!/usr/bin/env bash
-        skopeo copy --all docker://quay.io/ceph/ceph:v19.2.2 docker://registry.cn-hangzhou.aliyuncs.com/lue/ceph:v19.2.2
+        skopeo copy --all docker://mysql:5.6 docker://registry.cn-hangzhou.aliyuncs.com/lue/mysql:5.6
