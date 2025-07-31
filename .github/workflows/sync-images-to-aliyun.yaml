@@ -34,4 +34,4 @@ jobs:
     - name: Use Skopeo Tools Sync Image to AliYun Docker Registry
       run: |
         #!/usr/bin/env bash
-        skopeo copy --all docker://golang:1.17.5 docker://registry.cn-hangzhou.aliyuncs.com/lue/golang:1.17.5
+        skopeo copy --all docker://n8nio/n8n:stable docker://registry.cn-hangzhou.aliyuncs.com/lue/n8n:stable
