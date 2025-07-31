@@ -34,4 +34,4 @@ jobs:
     - name: Use Skopeo Tools Sync Image to AliYun Docker Registry
       run: |
         #!/usr/bin/env bash
-        skopeo copy --all docker://n8nio/n8n:stable docker://registry.cn-hangzhou.aliyuncs.com/lue/n8n:stable
+        skopeo copy --all docker://hotwa/n8n-chinese:1.104.1 docker://registry.cn-hangzhou.aliyuncs.com/lue/n8n-chinese:1.104.1
