@@ -34,8 +34,7 @@ jobs:
     - name: Use Skopeo Tools Sync Image to AliYun Docker Registry
       run: |
         #!/usr/bin/env bash
-        skopeo copy --all docker://lucaslorentz/caddy-docker-proxy:2.9-alpine docker://registry.cn-hangzhou.aliyuncs.com/lue/caddy-docker-proxy:2.9-alpine
-        skopeo copy --all docker://seafileltd/sdoc-server:1.0-latest docker://registry.cn-hangzhou.aliyuncs.com/lue/sdoc-server:1.0-latest
-        skopeo copy --all docker://mariadb:10.11 docker://registry.cn-hangzhou.aliyuncs.com/lue/mariadb:10.11
-        skopeo copy --all docker://memcached:1.6.29 docker://registry.cn-hangzhou.aliyuncs.com/lue/memcached:1.6.29
-        skopeo copy --all docker://seafileltd/seafile-mc:12.0-latest docker://registry.cn-hangzhou.aliyuncs.com/lue/seafile-mc:12.0-latest
+        skopeo copy --all docker://cloudreve/cloudreve:latest docker://registry.cn-hangzhou.aliyuncs.com/lue/cloudreve:latest
+        skopeo copy --all docker://postgres:17 docker://registry.cn-hangzhou.aliyuncs.com/lue/postgres:17
+        skopeo copy --all docker://redis:latest docker://registry.cn-hangzhou.aliyuncs.com/lue/redis:latest
+        
