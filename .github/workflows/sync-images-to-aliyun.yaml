@@ -34,6 +34,5 @@ jobs:
     - name: Use Skopeo Tools Sync Image to AliYun Docker Registry
       run: |
         #!/usr/bin/env bash
-        skopeo copy --all docker://apache/doris:fe-3.0.7 docker://registry.cn-hangzhou.aliyuncs.com/lue/doris:fe-3.0.7
-        skopeo copy --all docker://apache/doris:be-3.0.7 docker://registry.cn-hangzhou.aliyuncs.com/lue/doris:be-3.0.7
+        skopeo copy --all docker://rancher/rancher:2.9.11 docker://registry.cn-hangzhou.aliyuncs.com/lue/rancher:2.9.11
         
