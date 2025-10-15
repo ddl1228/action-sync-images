@@ -34,6 +34,4 @@ jobs:
     - name: Use Skopeo Tools Sync Image to AliYun Docker Registry
       run: |
         #!/usr/bin/env bash
-        skopeo copy --all docker://quay.io/argoproj/argocd:v2.13.9 docker://registry.cn-hangzhou.aliyuncs.com/lue/argocd:v2.13.9
-        skopeo copy --all docker://ghcr.io/dexidp/dex:v2.41.1 docker://registry.cn-hangzhou.aliyuncs.com/lue/dex:v2.41.1
-        skopeo copy --all docker://redis:7.0.15-alpine docker://registry.cn-hangzhou.aliyuncs.com/lue/redis:7.0.15-alpine
+        skopeo copy --all docker://alpine/helm:3.12.3 docker://registry.cn-hangzhou.aliyuncs.com/lue/helm:3.12.3
