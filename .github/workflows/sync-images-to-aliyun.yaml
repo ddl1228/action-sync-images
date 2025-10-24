@@ -34,4 +34,4 @@ jobs:
     - name: Use Skopeo Tools Sync Image to AliYun Docker Registry
       run: |
         #!/usr/bin/env bash
-        skopeo copy --all docker://registry.k8s.io/descheduler/descheduler:v0.33.0 docker://registry.cn-hangzhou.aliyuncs.com/lue/descheduler:v0.33.0
+        skopeo copy --all docker://registry.k8s.io/descheduler/descheduler:v0.27.0 docker://registry.cn-hangzhou.aliyuncs.com/lue/descheduler:v0.27.0
