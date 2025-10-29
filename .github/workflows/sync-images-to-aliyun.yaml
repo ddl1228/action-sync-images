@@ -34,8 +34,5 @@ jobs:
     - name: Use Skopeo Tools Sync Image to AliYun Docker Registry
       run: |
         #!/usr/bin/env bash
-        skopeo copy --all docker://docker/whalesay:v3.7.3 docker://registry.cn-hangzhou.aliyuncs.com/lue/whalesay:v3.7.3
         skopeo copy --all docker://quay.io/argoproj/argocli:v3.7.3 docker://registry.cn-hangzhou.aliyuncs.com/lue/argocli:v3.7.3
         skopeo copy --all docker://quay.io/argoproj/workflow-controller:v3.7.3 docker://registry.cn-hangzhou.aliyuncs.com/lue/workflow-controller:v3.7.3
-        skopeo copy --all docker://quay.io/holos/mccutchen/go-httpbin:v2.14.1 docker://registry.cn-hangzhou.aliyuncs.com/lue/go-httpbin:v2.14.1
-        skopeo copy --all docker://quay.io/minio/minio:RELEASE.2022-11-17T23-20-09Z docker://registry.cn-hangzhou.aliyuncs.com/lue/minio:RELEASE.2022-11-17T23-20-09Z
