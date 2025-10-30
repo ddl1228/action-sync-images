@@ -34,4 +34,6 @@ jobs:
     - name: Use Skopeo Tools Sync Image to AliYun Docker Registry
       run: |
         #!/usr/bin/env bash
-        skopeo copy --all docker://quay.io/argoproj/argoexec:v3.7.3 docker://registry.cn-hangzhou.aliyuncs.com/lue/argoexec:v3.7.3
+        skopeo copy --all docker://debian:9.1 docker://registry.cn-hangzhou.aliyuncs.com/lue/debian:9.1
+        skopeo copy --all docker://alpine:3.6 docker://registry.cn-hangzhou.aliyuncs.com/lue/alpine:3.6
+        skopeo copy --all docker://ubuntu:17.10 docker://registry.cn-hangzhou.aliyuncs.com/lue/ubuntu:17.10
