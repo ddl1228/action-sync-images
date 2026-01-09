@@ -35,3 +35,4 @@ jobs:
       run: |
         #!/usr/bin/env bash
         skopeo copy --all docker://golang:1.25 docker://registry.cn-hangzhou.aliyuncs.com/lue/golang:1.25
+        skopeo copy --all docker://golang:1.25-alpine docker://registry.cn-hangzhou.aliyuncs.com/lue/golang:1.25-alpine
