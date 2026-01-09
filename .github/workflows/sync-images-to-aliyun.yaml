@@ -34,7 +34,4 @@ jobs:
     - name: Use Skopeo Tools Sync Image to AliYun Docker Registry
       run: |
         #!/usr/bin/env bash
-        skopeo copy --all docker://redis:5 docker://registry.cn-hangzhou.aliyuncs.com/lue/redis:5
-        skopeo copy --all docker://mysql:5.7 docker://registry.cn-hangzhou.aliyuncs.com/lue/mysql:5.7
-        skopeo copy --all docker://hanchuanchuan/goinception docker://registry.cn-hangzhou.aliyuncs.com/lue/goinception
-        skopeo copy --all docker://hhyo/archery:v1.13.0 docker://registry.cn-hangzhou.aliyuncs.com/lue/archery:v1.13.0
+        skopeo copy --all docker://golang:1.25 docker://registry.cn-hangzhou.aliyuncs.com/lue/golang:1.25
