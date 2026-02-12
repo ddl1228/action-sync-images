@@ -34,4 +34,4 @@ jobs:
     - name: Use Skopeo Tools Sync Image to AliYun Docker Registry
       run: |
         #!/usr/bin/env bash
-        skopeo copy --all docker://fbraz3/lnmp:7.3-phalcon docker://registry.cn-hangzhou.aliyuncs.com/lue/lnmp:7.3-phalcon
+        skopeo copy --all docker://authelia/authelia:4.39.15 docker://registry.cn-hangzhou.aliyuncs.com/lue/authelia:4.39.15
