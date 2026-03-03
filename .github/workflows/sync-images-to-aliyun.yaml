@@ -34,4 +34,4 @@ jobs:
     - name: Use Skopeo Tools Sync Image to AliYun Docker Registry
       run: |
         #!/usr/bin/env bash
-        skopeo copy --all docker://authelia/authelia:4.39.15 docker://registry.cn-hangzhou.aliyuncs.com/lue/authelia:4.39.15
+        skopeo copy --all docker://vllm/vllm-openai:latest docker://registry.cn-hangzhou.aliyuncs.com/lue/vllm-openai:latest
