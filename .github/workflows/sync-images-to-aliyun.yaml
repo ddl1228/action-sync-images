@@ -34,4 +34,4 @@ jobs:
     - name: Use Skopeo Tools Sync Image to AliYun Docker Registry
       run: |
         #!/usr/bin/env bash
-        skopeo copy --all docker://vllm/vllm-openai:latest docker://registry.cn-hangzhou.aliyuncs.com/lue/vllm-openai:latest
+        skopeo copy --all docker://ghcr.io/open-webui/open-webui:main docker://registry.cn-hangzhou.aliyuncs.com/lue/open-webui:main
