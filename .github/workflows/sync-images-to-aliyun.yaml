@@ -34,4 +34,4 @@ jobs:
     - name: Use Skopeo Tools Sync Image to AliYun Docker Registry
       run: |
         #!/usr/bin/env bash
-        skopeo copy --all docker://vllm/vllm-openai:nightly docker://registry.cn-hangzhou.aliyuncs.com/lue/vllm-openai:nightly
+        skopeo copy --all docker://agentscope/copaw:pre docker://registry.cn-hangzhou.aliyuncs.com/lue/copaw:pre
