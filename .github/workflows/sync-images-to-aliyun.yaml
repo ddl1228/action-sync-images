@@ -34,4 +34,18 @@ jobs:
     - name: Use Skopeo Tools Sync Image to AliYun Docker Registry
       run: |
         #!/usr/bin/env bash
-        skopeo copy --all docker://agentscope/copaw:pre docker://registry.cn-hangzhou.aliyuncs.com/lue/copaw:pre
+        skopeo copy --all docker://hub.icert.top/opensearchproject/opensearch:2.19.1 docker://registry.cn-hangzhou.aliyuncs.com/lue/opensearch:2.19.1
+        skopeo copy --all docker://infiniflow/infinity:v0.7.0-dev2 docker://registry.cn-hangzhou.aliyuncs.com/lue/infinity:v0.7.0-dev2
+        skopeo copy --all docker://oceanbase/oceanbase-ce:4.4.1.0-100000032025101610 docker://registry.cn-hangzhou.aliyuncs.com/lue/oceanbase-ce:4.4.1.0-100000032025101610
+        skopeo copy --all docker://oceanbase/seekdb:latest docker://registry.cn-hangzhou.aliyuncs.com/lue/seekdb:latest
+        skopeo copy --all docker://mysql:8.0.39 docker://registry.cn-hangzhou.aliyuncs.com/lue/mysql:8.0.39
+        skopeo copy --all docker://quay.io/minio/minio:RELEASE.2025-06-13T11-33-47Z docker://registry.cn-hangzhou.aliyuncs.com/lue/minio:RELEASE.2025-06-13T11-33-47Z
+        skopeo copy --all docker://valkey/valkey:8 docker://registry.cn-hangzhou.aliyuncs.com/lue/valkey:8
+        skopeo copy --all docker://elasticsearch:8.11.3 docker://registry.cn-hangzhou.aliyuncs.com/lue/elasticsearch:8.11.3
+        skopeo copy --all docker://kibana:8.11.3 docker://registry.cn-hangzhou.aliyuncs.com/lue/kibana:8.11.3
+        skopeo copy --all docker://infiniflow/ragflow:v0.24.0 docker://registry.cn-hangzhou.aliyuncs.com/lue/ragflow:v0.24.0
+        skopeo copy --all docker://infiniflow/sandbox-executor-manager:latest docker://registry.cn-hangzhou.aliyuncs.com/lue/sandbox-executor-manager:latest
+        skopeo copy --all docker://infiniflow/sandbox-base-python:latest docker://registry.cn-hangzhou.aliyuncs.com/lue/sandbox-base-python:latest
+        skopeo copy --all docker://infiniflow/sandbox-base-nodejs:latest docker://registry.cn-hangzhou.aliyuncs.com/lue/sandbox-base-nodejs:latest
+        skopeo copy --all docker://infiniflow/text-embeddings-inference:cpu-1.8 docker://registry.cn-hangzhou.aliyuncs.com/lue/text-embeddings-inference:cpu-1.8
+        skopeo copy --all docker://infiniflow/text-embeddings-inference:1.8 docker://registry.cn-hangzhou.aliyuncs.com/lue/text-embeddings-inference:1.8
