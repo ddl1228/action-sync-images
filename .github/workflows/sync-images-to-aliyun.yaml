@@ -34,7 +34,7 @@ jobs:
     - name: Use Skopeo Tools Sync Image to AliYun Docker Registry
       run: |
         #!/usr/bin/env bash
-        skopeo copy --all docker://hub.icert.top/opensearchproject/opensearch:2.19.1 docker://registry.cn-hangzhou.aliyuncs.com/lue/opensearch:2.19.1
+        skopeo copy --all docker://opensearchproject/opensearch:2.19.1 docker://registry.cn-hangzhou.aliyuncs.com/lue/opensearch:2.19.1
         skopeo copy --all docker://infiniflow/infinity:v0.7.0-dev2 docker://registry.cn-hangzhou.aliyuncs.com/lue/infinity:v0.7.0-dev2
         skopeo copy --all docker://oceanbase/oceanbase-ce:4.4.1.0-100000032025101610 docker://registry.cn-hangzhou.aliyuncs.com/lue/oceanbase-ce:4.4.1.0-100000032025101610
         skopeo copy --all docker://oceanbase/seekdb:latest docker://registry.cn-hangzhou.aliyuncs.com/lue/seekdb:latest
