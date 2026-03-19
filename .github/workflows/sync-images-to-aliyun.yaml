@@ -35,4 +35,4 @@ jobs:
       run: |
         #!/usr/bin/env bash
         skopeo copy --all docker://docker.io/velero/velero:v1.18.0 docker://registry.cn-hangzhou.aliyuncs.com/lue/velero:v1.18.0
-        skopeo copy --all docker://registry.k8s.io/kubectl docker://registry.cn-hangzhou.aliyuncs.com/lue/kubectl
+        skopeo copy --all docker://registry.k8s.io/kubectl:v1.27.6 docker://registry.cn-hangzhou.aliyuncs.com/lue/kubectl:v1.27.6
