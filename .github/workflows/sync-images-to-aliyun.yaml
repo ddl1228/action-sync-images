@@ -34,5 +34,4 @@ jobs:
     - name: Use Skopeo Tools Sync Image to AliYun Docker Registry
       run: |
         #!/usr/bin/env bash
-        skopeo copy --all docker://velero/velero:v1.18.0 docker://registry.cn-hangzhou.aliyuncs.com/lue/velero:v1.18.0
-        skopeo copy --all docker://velero/velero-plugin-for-aws:v1.2.1 docker://registry.cn-hangzhou.aliyuncs.com/lue/velero-plugin-for-aws:v1.2.1
+        skopeo copy --all docker://golang:1.21.5 docker://registry.cn-hangzhou.aliyuncs.com/lue/golang:1.21.5
