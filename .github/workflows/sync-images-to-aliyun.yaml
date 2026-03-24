@@ -34,4 +34,4 @@ jobs:
     - name: Use Skopeo Tools Sync Image to AliYun Docker Registry
       run: |
         #!/usr/bin/env bash
-        skopeo copy --all docker://centos:centos7.9.2009 docker://registry.cn-hangzhou.aliyuncs.com/lue/centos:centos7.9.2009
+        skopeo copy --all docker://kroniak/ssh-client:3.23 docker://registry.cn-hangzhou.aliyuncs.com/lue/ssh-client:3.23
