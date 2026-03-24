@@ -34,4 +34,4 @@ jobs:
     - name: Use Skopeo Tools Sync Image to AliYun Docker Registry
       run: |
         #!/usr/bin/env bash
-        skopeo copy --all docker://alpine/ansible:2.18.6 docker://registry.cn-hangzhou.aliyuncs.com/lue/ansible:2.18.6
+        skopeo copy --all docker://centos:centos7.9.2009 docker://registry.cn-hangzhou.aliyuncs.com/lue/centos:centos7.9.2009
